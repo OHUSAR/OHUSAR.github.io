@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>C08: Oriented Bounding Boxes</title>
+    <title>POČÍTAČOVÝ SYNTETIZÉR PRIRODZENE ZNEJÚCEJ SLOVENČINY</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,8 +28,8 @@
 
 <body>
 
-    <div class="brand">C08: Oriented Bounding Boxes - Ondrej Husár, Filip Kováč</div>
-    <div class="address-bar">Physical-based Animations and Mathematical Modeling Material - mAIN - FMFI</div>
+    <div class="brand">Ondrej Husár</div>
+    <div class="address-bar">POČÍTAČOVÝ SYNTETIZÉR PRIRODZENE ZNEJÚCEJ SLOVENČINY - mAIN - FMFI</div>
 
     <div class="container">
 
@@ -39,62 +39,62 @@
                     <h2 class="brand-before">
                         <small>Vitajte na stránke</small>
                     </h2>
-                    <h1 class="brand-name">projektu C08: Oriented Bounding Boxes</h1>
+                    <h1 class="brand-name">Diplomovej práce</h1>
                     <hr class="tagline-divider">
                     <h2>
                         <small>
-                            <strong>Ondreja Husára a Filipa Kováča</strong>
+                            <strong>Ondreja Husára</strong>
                         </small>
                     </h2>
                 </div>
             </div>
         </div>
 
+        <div id='todo' class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        PDF
+                    </h2>
+                    <hr>
+                    <a href="dipl.pdf" download="">Stiahnite si aktuálne PDF</a>
+                    <br>
+                    <embed src="dipl.pdf" width= "800" height= "1200">
+                </div>
+            </div>
+        </div>
+
+        <div id='todo' class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        Ciele
+                    </h2>
+                    <hr>
+                    <p>
+                        Cieľom bude preskúmať problematiku a aktuálny stav syntézy reči
+                        a prozodických javov. Nadviaže sa predchádzajúce diplomové práce súvisiace
+                        so syntézou spevu a úpravy tempa reči.
+                    </p>
+                    <p>
+                        Zvolený prístup sa bude skúmať a testovať v octave/matlabe so zreteľom
+                        na implementáciu ako webová aplikácia (HTML5+JavaScript).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Repozitár s našim kódom</h2>
+                    <h2 class="intro-text text-center">Repozitár s kódom</h2>
                     <hr>
                     <hr class="visible-xs">
-                    <a href="https://github.com/OHUSAR/OrientedBoundingBoxes" target="_blank">Repozitár</a>
-                </div>
-            </div>
-        </div>
-
-        <div id='todo' class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        Štátnicová otázka - <strong>S4: Detekcie kolízie</strong>
-                    </h2>
-                    <hr>
-                    <a href="statnicova-otazka.pdf" download="">Stiahnite si štátnicovú otázku</a>
-                    <br>
-                    <embed src="statnicova-otazka.pdf" width= "800" height= "1200">
-                </div>
-            </div>
-        </div>
-
-        <div id='todo' class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">
-                        Doterajší <strong>progres projektu</strong>
-                    </h2>
-                    <hr>
-                    Projekt je už vpodstate hotový.
-
-                    Jadra projektu je už nakódené dlhšie (overiteľné po prezretí <a href="https://github.com/OHUSAR/OrientedBoundingBoxes" target="_blank">nášho repozitára</a>). Ostávalo nám nakódiť GUI, ktoré umožní používateľovi hrať sa s objektami a zobrazovať výsledky. Táto časť projektu už je v pomerne dobrom štádiu a využíva naimplementovanú funkcionalitu. <br>
-
-                    V repozitári v branchi GUI môžete vidieť jeho aktuálny stav.
-                    <br>
-                    <br> Zatial sú prístupné <a href="https://github.com/OHUSAR/OrientedBoundingBoxes/tree/master/OOBB-Matlab" target="_blank">DEMÁ V MATLABE</a>
-                    <hr class="visible-xs">
-                    <h4>Jeden z grafov vygenrovaný v Matlabe z dát z našich výpočtov</h4>
-                    <img src='img/OOBB.png' />
+                    <a href="#" target="_blank">TODO</a>
                 </div>
             </div>
         </div>
@@ -104,27 +104,27 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Základné informácie a požiadavky
-                        <strong>projektu</strong>
+                    <h2 class="intro-text text-center">Najdôležitejšie zdroje
+                        <strong>práce</strong>
                     </h2>
                     <hr>
                     <hr class="visible-xs">
                     <ul>
-                        <li>Scene: Two 2D non-convex poly-line objects</li>
-                        <li>Implement object definition<br>
-                        either read line segment positions from text file<br>
-                        or implement user interface to create poly-line by clicking on canvas</li>
-                        <li>Implement 2D OBB near optimal fitting<br>
-                        choose principal direction by rotating X-axis and Y-axis by one deg in a cycle
-                        for each angle (direction) project poly-line on new x,y axes and choose center as midpoint of projection, fit OBB<br>
-                        finally select direction of the OOB with minimal volume (area in 2d)</li>
-                        <li>Implement binary BVT construction by Top-Down approach<br>
-                        By splitting near optimal OBBs in half along principal direction (in each level should have optimal OBBS)</li>
-                        <li>Implement Tandem traversal for generated two BVTs</li>
-                        <li>Show overlapping boxes with red. Show their parent boxes up to the root with green<br>
-                        When nothing is overlapping show full box hierarchy with gray (user can turn this on/off)</li>
-                        <li>Implement user interaction with object</li>
-                        <li>User can move poly-lines - OBBs are updated - rotation of poly-line is NOT required</li>
+                    <li>
+                        <a href='http://joshpatton.org/yeshua/Elec484/Elec484_files/ELEC%20484%20-%20PSOLA%20Final%20Project%20Report.pdf' target='_blank'>
+                            Joshua Patton, ELEC 484 Project – Pitch Synchronous Overlap-Add
+                        </a>
+                    </li>
+                    <li>
+                        <a href='http://alis.uniba.sk:8088/lib/item?id=chamo:389211&fromLocationLink=false&theme=Katalog'>
+                            Martin Šukola: Diplomová práca: Počítačový syntetizér spevu. Univerzita Komenského, Bratislava, Slovensko, 2010.
+                        </a>
+                    </li>
+                    <li>
+                        <a href='http://alis.uniba.sk:8088/lib/item?id=chamo:623843&fromLocationLink=false&theme=Katalog' target='_blank'>
+                            Rudolf Krumpál: Diplomová práca: Prispôsobenie tempa zaznamenanej reči. Univerzita Komenského, Bratislava, Slovensko, 2016.
+                        </a>
+                    </li>
                     </ul>
                 </div>
             </div>
